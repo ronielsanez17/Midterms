@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Please Login your Account</title>
+    <style>
+      body {
+        max-height: max-content;
+        background-image: linear-gradient(rgb(255, 0, 0), rgb(29, 29, 29));
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="d-flex justify-content-end"
+            style="height: 7ch"
+            src="https://lh3.googleusercontent.com/pw/AJFCJaX-4JksI1btUHD0FVmqKR285H9ev_oceH6eorojshvq7ZnRDAhMR4hg_MWQIUJRxEaX9iaT-gQxYeUGV1WLnB9yyFwNYpFGZV63VIQPaTbW-oDulFKgRNXUk_EbY3mKJqgKse3CxZWvQNvM--dEfXHDMSU3SeJhiqaB31Q7hBedy2btB73J4SMSfQADDDL1F56RHHpB_WO6tzHGB70CemR7kYpWZTErqjQfJzd4MCVkN6w8DC1_F51a7-DUoKA3f94bgN98ShNcXRyhWPRT53KAtcyRtWBwSSzdZXq2Z0UX6Ok0Cmm8Kxpn0oS4C6DZyqhovGpmFCLkZbe_M7KQmx_U8_gt5wG_kaM7WbB6QBAN9v7joFcDm3Cv6lKe9AOR4FtrUC7cErb55ube7mLBpUnTf7kNJ95KRomrMiLG0C1VFwJiodQNQrGvB_9Dm5shAjek04Uil-s_h08xOlaKqWMHXhUfowug8b1r-TA19uZ4spaopxWEENZPt0WFbPtyfKbM-aZlJAtUkFV0YpX7-o78LqWvEKGHkjRv7LK1GuooMpUYKqDJh07D8AflyA7ezut4B49ZuXz4fXTfGHChLRaMlC61cTxnumOfjau2_ceE7PgAXyKQz6OoZi319akcZIIIXxscXXvFThGSSTfCSNfnkobjV9lm2q6f6-8i8u7vLy8AcNwmKm9fxUNila8H_BhoF0OkYFwulwS78oRrg6q3FTunFmnwS-EmC-uwS3PmB0rkvyljP17DPpWX9zIZefrjl04JRJ4t_6DDFmUVWpwRXlt5YaZXCPGBkGIpBtNUXETi-_0P5_kvSIvVxVikd7hyzgCh21bHrvyYUqDIvahQmpFNUImFpcOoo2gGu8nLHxw1FhwQSU5Dmhf9gTMXHKuRN0ysGAIjbs0zivd3-KhBiEu_EG4cbXFkTmjbSS_3Ke2czqmniWZNN3ZCk0iN6d9FKhUsT9L7Ch0h_-JlU92tgw6n7G0K71oic8kaeD3JB-f8ldjzSg56uC5w1JzhC1w5ij4C6zAaPWdxRcYZHgGyzi2oCkh--F31sqbsUwbemNtazxRf6sDAkPvHG4_g3PoBVOfFgw=w1350-h393-s-no?authuser=5"
+            alt="Canon Products Logo.jpeg"
+        /></a>
+      </div>
+    </nav>
+    <div
+      class="container bg-light rounded-5 shadow-lg"
+      style="
+        margin-top: 5%;
+        margin-bottom: 0%;
+        font-weight: bold;
+        padding-top: 0.5ch;
+        padding-left: 5ch;
+        padding-right: 5ch;
+        width: fit-content;
+      "
+    >
+      <br />
+      <h2>Login your Account</h2>
+      <hr />
+      <form id="login-form">
+        <div class="container">
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            style="width: 420px"
+            placeholder="Please input email address"
+            required
+          />
+          <br /><br />
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            style="width: 420px"
+            placeholder="Please input password"
+            required
+          />
+          <br /><br />
+          <button
+            type="submit"
+            class="btn btn-dark"
+            style="color: whitesmoke; font-size: larger; font-weight: bold"
+          >
+            Login
+          </button>
+          <p class="small fw-bold mt-2 pt-1 mb-0">
+            Don't have an account ?
+            <a href="index.html" class="link-success">Register here!</a>
+          </p>
+          <br />
+        </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase app
+      const firebaseConfig = {
+        apiKey: "AIzaSyCwTQCq_Zuwtn3zPFbNvMEQxwx2WPBNX5Q",
+        authDomain: "authentication-ef473.firebaseapp.com",
+        databaseURL:
+          "https://authentication-ef473-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "authentication-ef473",
+        storageBucket: "authentication-ef473.appspot.com",
+        messagingSenderId: "767174147791",
+        appId: "1:767174147791:web:b1d7d93f8f125f7599c1ba",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      // Handle form submit
+      const loginForm = document.getElementById("login-form");
+      loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const email = loginForm.email.value.trim();
+        const password = loginForm.password.value.trim();
+
+        try {
+          // Sign in user with email and password
+          await firebase.auth().signInWithEmailAndPassword(email, password);
+          alert("Login successfully!");
+          window.location.href = "viewproducts.html";
+          // Redirect to new URL
+        } catch (error) {
+          console.error(error);
+          alert("Failed to login. Invalid Credentials.");
+        }
+      });
+    </script>
+  </body>
+  <footer style="margin-top: 50ch" class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <img
+        style="height: 7ch"
+        src="https://lh3.googleusercontent.com/pw/AJFCJaX-4JksI1btUHD0FVmqKR285H9ev_oceH6eorojshvq7ZnRDAhMR4hg_MWQIUJRxEaX9iaT-gQxYeUGV1WLnB9yyFwNYpFGZV63VIQPaTbW-oDulFKgRNXUk_EbY3mKJqgKse3CxZWvQNvM--dEfXHDMSU3SeJhiqaB31Q7hBedy2btB73J4SMSfQADDDL1F56RHHpB_WO6tzHGB70CemR7kYpWZTErqjQfJzd4MCVkN6w8DC1_F51a7-DUoKA3f94bgN98ShNcXRyhWPRT53KAtcyRtWBwSSzdZXq2Z0UX6Ok0Cmm8Kxpn0oS4C6DZyqhovGpmFCLkZbe_M7KQmx_U8_gt5wG_kaM7WbB6QBAN9v7joFcDm3Cv6lKe9AOR4FtrUC7cErb55ube7mLBpUnTf7kNJ95KRomrMiLG0C1VFwJiodQNQrGvB_9Dm5shAjek04Uil-s_h08xOlaKqWMHXhUfowug8b1r-TA19uZ4spaopxWEENZPt0WFbPtyfKbM-aZlJAtUkFV0YpX7-o78LqWvEKGHkjRv7LK1GuooMpUYKqDJh07D8AflyA7ezut4B49ZuXz4fXTfGHChLRaMlC61cTxnumOfjau2_ceE7PgAXyKQz6OoZi319akcZIIIXxscXXvFThGSSTfCSNfnkobjV9lm2q6f6-8i8u7vLy8AcNwmKm9fxUNila8H_BhoF0OkYFwulwS78oRrg6q3FTunFmnwS-EmC-uwS3PmB0rkvyljP17DPpWX9zIZefrjl04JRJ4t_6DDFmUVWpwRXlt5YaZXCPGBkGIpBtNUXETi-_0P5_kvSIvVxVikd7hyzgCh21bHrvyYUqDIvahQmpFNUImFpcOoo2gGu8nLHxw1FhwQSU5Dmhf9gTMXHKuRN0ysGAIjbs0zivd3-KhBiEu_EG4cbXFkTmjbSS_3Ke2czqmniWZNN3ZCk0iN6d9FKhUsT9L7Ch0h_-JlU92tgw6n7G0K71oic8kaeD3JB-f8ldjzSg56uC5w1JzhC1w5ij4C6zAaPWdxRcYZHgGyzi2oCkh--F31sqbsUwbemNtazxRf6sDAkPvHG4_g3PoBVOfFgw=w1350-h393-s-no?authuser=5"
+        alt="Canon Products Logo.jpeg"
+      />
+      <br />
+      <hr />
+      <span>Copyright © 2023 Canon Product Library | All Rights Reserved</span>
+    </div>
+  </footer>
+</html>
